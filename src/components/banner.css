@@ -1,0 +1,49 @@
+.banner {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fbfbfb;
+    color: #5c5470;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+
+.banner-background {
+    width: 900px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.banner-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    background: #ffffff;
+    border-top: 4px solid #e5e5e5;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fbfbfb;
+    color: #5c5470;
+    display: flex;
+}
+
+.banner-nav a {
+    color: #352f44;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.25s ease;
+}
+
+.banner-nav a:hover {
+    color: #352f44;
+}

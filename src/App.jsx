@@ -2,14 +2,15 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Banner from './components/banner';
 
-import Home from './pages/1Home';
-import Exhibits from './pages/2exhibits';
-import Biography from  './pages/3biography';
-import Timeline from './pages/4timeline';
-import German from './pages/5german';
-import Diaries from './pages/6diaries';
+import Home from './pages/home';
+import Exhibits from "./pages/exhibits";
+import Biography from  './pages/biography';
+import Timeline from './pages/timeline';
+import German from './pages/german';
+import Diaries from './pages/diaries';
 
 const App = () => {
+  return (
   <>
   <Banner />
   <Routes>
@@ -21,10 +22,12 @@ const App = () => {
     <Route path="/Diaries" element={<Diaries />} />
   </Routes>
   </>
-}
+  );
+};
 
+export default App;
 /*
-artwork
+exhibits
 biography
 timeline
 german expressionism
