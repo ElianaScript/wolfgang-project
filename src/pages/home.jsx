@@ -1,24 +1,67 @@
-import React from 'react';
-import '../index.css';
+import React from "react";
+import "../index.css";
 
-const home = () => {
-    return (
+function Home() {
+  return (
+    <main className="home">
 
-        <div>
-            <h1>Large portrait of Wolfgang here</h1>
-            <p>underneath "Discover the Art and Life of Wolfgang (italics)</p>
-            <p>short intro paragraph</p>
+      <section className="hero">
+        <img
+          className="portrait"
+          src="wolff-portrait.png"
+          alt="Wolfgang Wolff"
+        />
 
-            <h1>Feature artwork here</h1>
-            <p>title, and information about art</p>
+        <div className="hero-text">
+          <h1>Discover the Art and Life of Wolfgang Wolff</h1>
 
-            <h1>Quote from Wolfgangs diary here (handwritten)</h1>
-            <p> signed, Wolfgang with Diary entry date here</p>
+          <p>
+            Explore the remarkable journey of artist Wolfgang Wolff,
+            from his escape from Nazi Germany to his exile in Tahiti.
+          </p>
 
-            <h2> footer at the bottom</h2>
-            <p>links to social media pages, wikipedia page, or foundation website</p>
+          <button>Explore Collection</button>
         </div>
-    )
+      </section>
+
+      <section className="featured-art">
+        <h2>Featured Artwork</h2>
+
+        <img
+          src="featured-art.jpg"
+          alt="Featured artwork"
+        />
+
+        <h3>Artwork Title</h3>
+
+        <p>
+          A short description of the work, its history,
+          and why it represents Wolfgang's artistic vision.
+        </p>
+      </section>
+
+      <section className="diary">
+        <h2>From the Diary</h2>
+
+        <img
+          src="diary-page.png"
+          alt="Wolfgang diary page/drawing"
+        />
+
+        <blockquote>
+          "Sample diary quote goes here..."
+        </blockquote>
+
+        <p>— Wolfgang Wolff, year</p>
+      </section>
+
+      <footer>
+        <p>Wolfgang Wolff Foundation</p>
+        <p>Wikipedia • Instagram • Contact</p>
+      </footer>
+
+    </main>
+  );
 }
 
-export default home;
+export default Home;

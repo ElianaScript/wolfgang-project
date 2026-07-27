@@ -1,5 +1,149 @@
+:root {
+    --paper: #f8f5ef;
+    --paper-dark: #ede6d9;
+
+    --ink: #403a35;
+
+    --brown: #6f5846;
+    --gold: #b79058;
+
+    --shadow: rgba(0,0,0,.15);
+}
+
 html {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #fbfbfb;
-    color: #5c5470;
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
+    background-color: #fffcf7;
+    color: #000000;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.home {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 6rem 3rem;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.portrait {
+    width: 420px;
+    border-radius: 8px;
+    box-shadow: 0 20px 45px rgba(0,0,0,.15);
+}
+
+button {
+    margin-top: 2rem;
+    padding: 14px 28px;
+    background: #5c5470;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+button:hover {
+    background: #463d58;
+    transform: translateY(-2px);
+}
+
+section {
+    padding: 5rem 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
+
+blockquote {
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: #7c6c95;
+}
+
+footer {
+    padding: 4rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.portrait{
+    width:420px;
+    border:12px solid white;
+    box-shadow:0 18px 40px var(--shadow);
+}
+
+button{
+    padding:14px 30px;
+    border:none;
+    background:var(--brown);
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#5b4738;
+}
+
+section{
+    padding:6rem 10%;
+}
+
+.featured-art img{
+    width:100%;
+    max-width:700px;
+    margin:2rem auto;
+    display:block;
+    box-shadow:0 15px 35px var(--shadow);
+}
+
+blockquote{
+    font-family:"Cormorant Garamond", serif;
+    font-size:2rem;
+    font-style:italic;
+    margin:2rem 0;
+    color:#6f5846;
+}
+
+footer{
+    margin-top:5rem;
+    background:#3a3028;
+    color:white;
+    text-align:center;
+    padding:3rem;
+}
+
+footer a{
+    color:#d8c59b;
+    text-decoration:none;
 }
