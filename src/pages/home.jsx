@@ -17,7 +17,7 @@ function Home() {
 
           <p>
             Explore the remarkable journey of artist Wolfgang Wolff,
-            from his escape from Nazi Germany to his exile in Tahiti.
+            from his escape from Nazi Germany to his life in Tahiti.
           </p>
 
           <button>Explore Collection</button>
