@@ -20,7 +20,9 @@ function Home() {
             from his escape from Nazi Germany to his life in Tahiti.
           </p>
 
-          <button>Explore Collection</button>
+          <a href="/exhibits">
+            <button type="button">Explore Collection</button>
+          </a>
         </div>
       </section>
 
