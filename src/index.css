@@ -269,3 +269,88 @@ footer a {
 .card-content button {
     margin-top: 20px;
 }
+
+/* TIMELINE CSS */
+
+.timeline {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    overflow-x: auto;
+}
+
+.timeline-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    min-width: max-content;
+    padding: 100px 40px;
+}
+
+/* Horizontal line */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    background: #ccc;
+    transform: translateY(-50%);
+}
+
+.timeline-event {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+    z-index: 2;
+}
+
+/* Year above the dot */
+.timeline-year {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Timeline dot */
+.timeline-dot {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #222;
+    cursor: pointer;
+    z-index: 3;
+}
+
+/* Hover card */
+.timeline-tooltip {
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    transform: translateX(-50%);
+
+    width: 260px;
+    padding: 18px;
+
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+.timeline-dot:hover .timeline-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(5px);
+}

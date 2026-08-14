@@ -4,39 +4,23 @@ import "../index.css";
 const Exhibits = () => {
   const exhibits = [
     {
-      years: "1920–1935",
+      years: "1909–1934",
       title: "Early Years in Germany",
       description:
         "Wolfgang's childhood and formative years in Alsace-Lorraine, as well as his time in University.",
       image: "1920-1935.png",
     },
     {
-      years: "1936–1945",
-      title: "1936-1945: Fleeing Nazi Germany and Escape to Tahiti",
-      description:
-        "",
-      image: "wwii.jpg",
+      years: "1934–1948",
+      title: "Fleeing Nazi Germany and Escape to Tahiti",
+      description: "Wolfgang and Max leave Germany, escaping to Tahiti where Wolfgang ends up in two French prisoner camps.",
+      image: "tahiti.png",
     },
     {
-      years: "1946–1965",
+      years: "1948–1994",
       title: "A New Beginning",
-      description:
-        "",
-      image: "new-beginning.jpg",
-    },
-    {
-      years: "1966–1980",
-      title: "Later Works",
-      description:
-        "",
-      image: "mature-works.jpg",
-    },
-    {
-      years: "1981–1994",
-      title: "Legacy",
-      description:
-        "",
-      image: "legacy.jpg",
+      description: "Wolfgang, Max, and their son Goetz, leave Tahiti for the United States, moving to Los Angeles.",
+      image: "losangeles.png",
     },
   ];
 
@@ -45,7 +29,7 @@ const Exhibits = () => {
       <div className="exhibits-header">
         <h1>
           Explore Wolfgang Wolff's life through artwork, photographs,
-          journal entries, and personal history organized by era.
+          journal entries, and personal history organized by year.
         </h1>
       </div>
 
